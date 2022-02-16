@@ -26,8 +26,4 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
-.el-input__suffix-inner,
-.el-input__prefix-inner {
-  align-items: center !important;
-}
 </style>
