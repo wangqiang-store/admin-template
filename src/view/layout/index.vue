@@ -80,7 +80,6 @@ watch(validTime, (newValue) => {
       if (res.data.code === RES_SUCCESS) {
         setToken(res.data.data.jws);
         localWrite('ExpirationTime', res.data.data.expirationTime);
-        userStore.SET_TOKEN(res.data.data.jws);
         validTime.value = localRead('ExpirationTime');
       }
     }, newValue - new Date().getTime());
